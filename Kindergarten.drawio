@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-06T07:50:03.440Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="cbnOztKbISiE2MmWRBPx" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-06T08:31:40.778Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="8xJ0X_m2LptbRoWsmXIS" version="13.6.6" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1038" dy="2817" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -50,12 +50,6 @@
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="505" y="-1710" as="sourcePoint" />
             <mxPoint x="605" y="-1650" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="54aEL65558y0Twl9wDXi-5" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;" parent="1" source="jtmZs7vrfvo6yjPVw2VY-2" target="jtmZs7vrfvo6yjPVw2VY-58" edge="1">
-          <mxGeometry width="100" height="100" relative="1" as="geometry">
-            <mxPoint x="380" y="-1590" as="sourcePoint" />
-            <mxPoint x="480" y="-1690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="jtmZs7vrfvo6yjPVw2VY-53" value="attendance" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
@@ -164,6 +158,24 @@
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="370" y="-1630" as="sourcePoint" />
             <mxPoint x="600" y="-1480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-8" value="family" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="90" y="-1530" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-9" value="+id                                 PK&#xa;+kids_id                         FK&#xa;+contacts_id                  FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="JxFD-TdY9gkGIwwa138k-8">
+          <mxGeometry y="30" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-10" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="JxFD-TdY9gkGIwwa138k-9">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="260" y="-1660" as="sourcePoint" />
+            <mxPoint x="30" y="-1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-11" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;" edge="1" parent="1" source="jtmZs7vrfvo6yjPVw2VY-2" target="JxFD-TdY9gkGIwwa138k-9">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="-1550" as="sourcePoint" />
+            <mxPoint x="470" y="-1650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
