@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-06T13:20:50.680Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="IjNjvPRSQHn8y2gof-KL" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-06T13:33:48.481Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36" etag="LPumAVBJfWsFBp_BGToJ" version="13.6.6" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1038" dy="3917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -149,10 +149,10 @@
           <mxGeometry y="30" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="jtmZs7vrfvo6yjPVw2VY-45" value="activity_type" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
-          <mxGeometry x="80" y="-2030" width="160" height="90" as="geometry" />
+          <mxGeometry x="80" y="-2030" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="jtmZs7vrfvo6yjPVw2VY-46" value="+id                             PK&#xa;+name                       &#xa;+fee " style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="jtmZs7vrfvo6yjPVw2VY-45" vertex="1">
-          <mxGeometry y="30" width="160" height="60" as="geometry" />
+        <mxCell id="jtmZs7vrfvo6yjPVw2VY-46" value="+id                             PK&#xa;+name                       &#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="jtmZs7vrfvo6yjPVw2VY-45" vertex="1">
+          <mxGeometry y="30" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="JxFD-TdY9gkGIwwa138k-51" value="activity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
           <mxGeometry x="80" y="-2140" width="160" height="100" as="geometry" />
@@ -226,23 +226,11 @@
         <mxCell id="jtmZs7vrfvo6yjPVw2VY-54" value="+id                               PK&#xa;+date&#xa;+kid                             FK&#xa;+state                          FK&#xa;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" parent="jtmZs7vrfvo6yjPVw2VY-53" vertex="1">
           <mxGeometry y="30" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="JxFD-TdY9gkGIwwa138k-3" value="payments" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="600" y="-1560" width="160" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="JxFD-TdY9gkGIwwa138k-4" value="+id                             PK&#xa;+kid_id                       FK&#xa;+date&#xa;+gen_payment&#xa;+act_payment&#xa;+donation" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="JxFD-TdY9gkGIwwa138k-3">
-          <mxGeometry y="30" width="160" height="100" as="geometry" />
-        </mxCell>
         <mxCell id="JxFD-TdY9gkGIwwa138k-69" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;" edge="1" parent="1" source="54aEL65558y0Twl9wDXi-8" target="54aEL65558y0Twl9wDXi-33">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="345" y="-2210" as="sourcePoint" />
             <mxPoint x="470" y="-2050" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="JxFD-TdY9gkGIwwa138k-1" value="fees" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
-          <mxGeometry x="580" y="-2252.5" width="160" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="JxFD-TdY9gkGIwwa138k-2" value="+id                                 PK&#xa;+per day&#xa;+donation per month" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="JxFD-TdY9gkGIwwa138k-1">
-          <mxGeometry y="30" width="160" height="60" as="geometry" />
         </mxCell>
         <mxCell id="54aEL65558y0Twl9wDXi-7" value="attendance_activity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" parent="1" vertex="1">
           <mxGeometry x="340" y="-2265" width="160" height="95" as="geometry" />
@@ -266,6 +254,30 @@
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="370" y="-1750" as="sourcePoint" />
             <mxPoint x="470" y="-1850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-77" value="types_payments" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-1670" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-78" value="+id                                PK&#xa;+type                            " style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="JxFD-TdY9gkGIwwa138k-77">
+          <mxGeometry y="30" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-79" value="payments" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="600" y="-1580" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-80" value="+id                                 PK&#xa;+type                             FK&#xa;+kid_id                           FK&#xa;+date_due&#xa;+date_paid&#xa;+amount_due&#xa;+amount_paid" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="JxFD-TdY9gkGIwwa138k-79">
+          <mxGeometry y="30" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-81" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;" edge="1" parent="1" target="JxFD-TdY9gkGIwwa138k-78">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="760" y="-1510" as="sourcePoint" />
+            <mxPoint x="860" y="-1610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JxFD-TdY9gkGIwwa138k-82" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;" edge="1" parent="1" source="JxFD-TdY9gkGIwwa138k-80" target="jtmZs7vrfvo6yjPVw2VY-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="370" y="-1450" as="sourcePoint" />
+            <mxPoint x="470" y="-1550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
